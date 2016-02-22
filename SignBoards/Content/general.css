@@ -1,0 +1,17 @@
+﻿.home-page-body {
+    background-color: red;
+    padding: 2%;
+}
+
+.for-sale {
+    color: #ffffff;
+    font-size: 8em;
+    font-weight: 600;
+}
+
+.white-box {
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    background-color: #ffffff;
+}

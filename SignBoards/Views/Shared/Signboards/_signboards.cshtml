@@ -1,0 +1,32 @@
+﻿@model IEnumerable<SignBoards.Models.SignBoardsModel>
+
+@foreach (var item in Model)
+{
+    <div class="signboard-container">
+
+        <div class="signboard-header">
+
+            <h3 class="text-center signboard-header-text">Available Fitting</h3>
+
+        </div>
+
+        <div class="signboard-body">
+
+            <span>@Html.LabelFor(modelItem => item.FittingAddressPostcode)</span>
+            <br />
+            <span>@Html.DisplayFor(modelItem => item.FittingAddressPostcode)</span>
+            <br />
+            <span>@Html.LabelFor(modelItem => item.FittingCharge)</span>
+            <br />
+            <span>@Html.DisplayFor(modelItem => item.FittingCharge)</span>
+            <br />
+            <span>@Html.LabelFor(modelItem => item.FittingType)</span>
+            <br />
+            <span>@Html.DisplayFor(modelItem => item.FittingType)</span>
+            <br />
+            <p class="signboard-header-text">@Html.ActionLink("Make Bid", "Create", "SignBoardBids", new { signBoardBidId = item.Id }, new { @class = "" })</p>
+            <p class="signboard-bid-text">@Html.ActionLink("View Bid", "Bids", "SignBoardBids", new { userId = item.CreatedByUserId }, new { @class = "" })</p>
+
+        </div>
+    </div>
+}

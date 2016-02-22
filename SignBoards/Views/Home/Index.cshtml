@@ -1,0 +1,23 @@
+﻿@model IEnumerable<SignBoards.Models.SignBoardsModel>
+
+@{
+    ViewBag.Title = "Signboards Home";
+}
+
+<section>
+
+    <p>This is version 1 of the signboard site. Would you like to see a feature? If so, please let us know @Html.ActionLink("here", "Create", "ContactUs")</p>
+    <H2 class="text-center">Would you like to save money on the fitting of your signboards?</H2>
+
+</section>
+
+<div class="text-center home-page-body">
+    <p class="for-sale">Active Signboards</p>
+
+    <div class="white-box">
+
+        @Html.Partial("Signboards/_signboards", Model)
+
+    </div>
+</div>
+

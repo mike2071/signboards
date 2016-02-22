@@ -1,0 +1,90 @@
+﻿@model SignBoards.Models.SignBoardBid
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SignBoardBid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contractor.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contractor.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SignBoard.FittingInstructions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SignBoard.FittingInstructions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BidAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BidAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BidDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BidDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsBidWinner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsBidWinner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedByUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedByUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedByUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedByUserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
